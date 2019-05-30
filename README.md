@@ -1,11 +1,28 @@
-# ESTRUTURA DO PROJETO
+# Adonis API application
 
-Este projeto terá um site PWA feito com ReactJS e com uma área administrativa para manutenção e cadastrados que servirão para alimentar o site.
+This is the boilerplate for creating an API server in AdonisJs, it comes pre-configured with.
 
-## FrontEnd
+1. Bodyparser
+2. Authentication
+3. CORS
+4. Lucid ORM
+5. Migrations and seeds
 
-Para o Frontend, usarei o React com Sass e recursos para responsividade partindo da filosifia: "Mobile First".
+## Setup
 
-## Backend
+Use the adonis command to install the blueprint
 
-Para o Backend, usarei o AdonisJS provendo a api REST.
+```bash
+adonis new yardstick --api-only
+```
+
+or manually clone the repo and then run `npm install`.
+
+
+### Migrations
+
+Run the following command to run startup migrations.
+
+```js
+adonis migration:run
+```
